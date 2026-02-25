@@ -1,4 +1,14 @@
 package Model;
+public class Instructor extends Person {
 
-public class Instructor {
+    private String department;
+
+    public Instructor(String name, String email, String department) {
+        super(name, email);
+        this.department = department;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
 }
